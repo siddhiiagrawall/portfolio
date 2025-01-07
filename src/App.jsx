@@ -12,26 +12,25 @@ import Footer from '../components/footer/Footer';
 import ScrollUp from '../components/scrollup/ScrollUp';
 
 function App() {
+	return (
+		<>
+			<Header />
 
-  return (
-    <>
-      <Header />
+			<main className='main'>
+				<Home />
+				<Work />
+				<Skills />
+				<Experience />
+				<Qualification />
+				<About />
+				<Testimonials />
+				<Contact />
+			</main>
 
-      <main className="main">
-        <Home />
-        <About />
-        <Skills />
-        <Experience />
-        <Qualification />
-        <Work />
-        <Testimonials />
-        <Contact />
-      </main>
-
-      <Footer />
-      <ScrollUp />
-    </>
-  )
+			<Footer />
+			<ScrollUp />
+		</>
+	);
 }
 
-export default App
+export default App;
