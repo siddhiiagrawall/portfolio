@@ -11,6 +11,7 @@ export const projectsData = [
 		title: 'Dynamic Tic-Tac-Toe Game',
 		category: 'app',
 		demoUrl: 'https://tic-tac-toe-project-x-o.vercel.app/',
+		sourceUrl: 'https://github.com/soumyajiitt/tic-tac-toe',
 		status: 'completed',
 	},
 	{
@@ -19,6 +20,7 @@ export const projectsData = [
 		title: 'Multi-Step Form',
 		category: 'app',
 		demoUrl: 'https://multi-step-form-soumyajiitt.netlify.app/',
+		sourceUrl: 'https://github.com/soumyajiitt/multi-step-form',
 		status: 'completed',
 	},
 	{
@@ -27,6 +29,7 @@ export const projectsData = [
 		title: 'devfinder.',
 		category: 'app',
 		demoUrl: 'https://soumyajiitt.github.io/GithubUserSearch/',
+		sourceUrl: 'https://github.com/soumyajiitt/GithubUserSearch',
 		status: 'completed',
 	},
 	{
@@ -35,6 +38,7 @@ export const projectsData = [
 		title: 'Portfolio Website',
 		category: 'web',
 		demoUrl: 'https://soumyajitbasak.netlify.app/',
+		sourceUrl: 'https://github.com/soumyajiitt/Portfolio',
 		status: 'completed',
 	},
 	{
@@ -43,6 +47,7 @@ export const projectsData = [
 		title: 'JIRABoard',
 		category: 'web',
 		demoUrl: '#',
+		sourceUrl: '#',
 		status: 'development',
 	},
 	{
@@ -51,6 +56,7 @@ export const projectsData = [
 		title: 'TNY.io',
 		category: 'web',
 		demoUrl: '#',
+		sourceUrl: '#',
 		status: 'development',
 	},
 ];

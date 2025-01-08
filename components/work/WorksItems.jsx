@@ -14,6 +14,13 @@ const WorksItems = ({ item }) => {
 		}
 	};
 
+	const handleSourceClick = (e) => {
+		e.preventDefault();
+		if (item.sourceUrl && item.sourceUrl !== '#') {
+			window.open(item.sourceUrl, '_blank');
+		}
+	};
+
 	return (
 		<div className='work__card' key={item.id}>
 			<img src={item.image} alt='' className='work__img' />
@@ -28,11 +35,19 @@ const WorksItems = ({ item }) => {
 					}
 					onMouseLeave={() => setShowTooltip(false)}
 				>
-					Demo <i className='bx bx-right-arrow-alt work__button-icon'></i>
+					<i className='bx bx-globe work__button-icon' /> Website
 				</a>
 				{showTooltip && item.status === 'development' && (
 					<div className='work__tooltip'>Under Development</div>
 				)}
+				<a
+					href='#'
+					className='work__button'
+					onClick={handleSourceClick}
+				>
+					<i className='bx bxl-github work__button-icon' /> Source
+				</a>
+				
 			</div>
 		</div>
 	);

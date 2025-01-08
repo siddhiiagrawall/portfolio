@@ -47,15 +47,22 @@
 
 .work__button {
 	color: var(--text-color);
-	font-size: var(--small-font-size);
-	display: flex;
-	align-items: center;
-	column-gap: 0.25rem;
+  font-size: var(--small-font-size);
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .work__button-icon {
 	font-size: 1rem;
-	transition: 0.4s;
+	transition: 0.3s;
+}
+
+.work__button:hover {
+  color: var(--title-color-dark);
+  transform: translateX(0.25rem);
 }
 
 .work__button:hover .work__button-icon {
@@ -68,8 +75,11 @@
 }
 
 .work__button-container {
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--mb-0-75);
 	position: relative;
-	display: inline-blo.worck;
 }
 
 .work__tooltip {
