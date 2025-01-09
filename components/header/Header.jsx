@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import './Header.css';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 const Header = () => {
 	window.addEventListener('scroll', function () {
@@ -100,6 +101,10 @@ const Header = () => {
 								<i className='uil uil-message nav__icon'></i> Contact Me
 							</a>
 						</li>
+
+						<li className='nav__item theme-toggle-desktop'>
+							<ThemeToggle />
+						</li>
 					</ul>
 
 					<i
@@ -107,6 +112,12 @@ const Header = () => {
 						onClick={() => showMenu(!Toggle)}
 					></i>
 				</div>
+
+				{!Toggle && (
+          <div className='theme-toggle-mobile'>
+            <ThemeToggle />
+          </div>
+        )}
 
 				<div className='nav__toggle' onClick={() => showMenu(!Toggle)}>
 					<i className='uil uil-apps'></i>

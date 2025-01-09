@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+/* Light mode colors */
 :root {
   --header-height: 3rem;
   --hue: 0;
@@ -42,6 +43,42 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
+
+  --toggle-bg: #e0e0e0;
+  --toggle-border: #ccc;
+  --toggle-slider-bg-light: #ffffff;
+  --toggle-slider-bg-dark: #333333;
+  --toggle-icon-color: #333333;
+  --toggle-bg-hover: #d0d0d0; 
+  --toggle-slider-bg-hover: #f0f0f0; 
+}
+
+/* Dark mode colors */
+[data-theme="dark"] {
+  --title-color: hsl(var(--hue), var(--sat), 95%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 100%);
+  --text-color: hsl(var(--hue), var(--sat), 80%);
+  --body-color: hsl(var(--hue), var(--sat), 10%);
+  --container-color: hsl(var(--hue), var(--sat), 15%);
+  --toggle-bg: #333333; 
+  --toggle-border: #555; 
+  --toggle-slider-bg-light: #ffffff; 
+  --toggle-slider-bg-dark: #e0e0e0; 
+  --toggle-icon-color: #090909; 
+  --toggle-bg-hover: #444444; 
+  --toggle-slider-bg-hover: #f0f0f0;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.section {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Responsive typography */

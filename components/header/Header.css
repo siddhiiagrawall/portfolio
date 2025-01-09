@@ -23,7 +23,17 @@
 
 .nav__list {
     display: flex;
+    align-items: center; 
     column-gap: 2rem;
+}
+
+.nav__item {
+    display: flex;
+    align-items: center; 
+}
+
+.theme-toggle {
+    margin-left: auto;
 }
 
 .nav__link {
