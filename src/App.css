@@ -217,6 +217,35 @@ img {
   }
 }
 
+/* Hide default cursor */
+* {
+  cursor: none !important;
+}
+
+/* Ensure smooth animation on all elements */
+body {
+  overflow-x: hidden;
+}
+
+/* Updated cursor mix-blend-mode for better visibility */
+.cursor-main, .cursor-frame, .cursor-accent {
+  mix-blend-mode: exclusion;
+  filter: drop-shadow(0 0 3px rgba(255, 215, 0, 0.4));
+}
+
+/* Added media queries to adjust cursor colors for different backgrounds */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cursor-glow: rgba(255, 215, 0, 0.5);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --cursor-glow: rgba(218, 165, 32, 0.6);
+  }
+}
+
 /* For medium devices */
 @media screen and (max-width: 768px) {
   body {
