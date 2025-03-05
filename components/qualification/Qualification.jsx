@@ -1,57 +1,101 @@
-/* eslint-disable no-unused-vars */
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
+import { motion } from 'framer-motion'; // Import motion
 import './qualification.css';
 
 const Qualification = () => {
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+  const dataVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
+  const lineVariants = {
+    hidden: { height: 0 },
+    visible: { height: "100%" },
+  };
+
   return (
-    <section className="qualification section">
-        <h2 className="section__title">Qualification 🧑🏻‍🎓</h2>
-        <span className="section__subtitle">My Personel Journey 🚗</span>
+    <section className="qualification section" id="qualification">
+      <h2 className="section__title">Qualification 🧑🏻‍🎓</h2>
+      <span className="section__subtitle">My Personal Journey 🚗</span>
 
-        <div className="qualification__container container">
-            <div className="qualification__tabs">
-                <div className="qualification__button qualification__active button--flex">
-                    <i className="uil uil-graduation-cap qualification__icon"></i> Education
-                </div>
-            </div>
-
-            <div className="qualification__sections">
-                <div className="qualification__content">
-                    <div className="qualification__data">
-                        <div>
-                            <h3 className="qualification__title">Bachelor of Technology🎓</h3>
-                            <span className="qualification__subtitle">REVA University - Bengaluru</span>
-                            <div className="qualification__calender">
-                                <i className="uil uil-calendar-alt"></i> 2020 - 2024
-                            </div>
-                        </div>
-
-                        <div>
-                            <span className="qualification__round"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                    </div>
-
-                    <div className="qualification__data">
-                        <div></div>
-
-                        <div>
-                            <span className="qualification__round"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                        <div>
-                            <h3 className="qualification__title">Higher Secondary🧪</h3>
-                            <span className="qualification__subtitle">CBSE - Bengaluru</span>
-                            <div className="qualification__calender">
-                                <i className="uil uil-calendar-alt"></i> 2018 - 2020
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div className="qualification__container container">
+        <div className="qualification__tabs">
+          <div className="qualification__button qualification__active button--flex">
+            <i className="uil uil-graduation-cap qualification__icon"></i> Education
+          </div>
         </div>
-    </section>
-  )
-}
 
-export default Qualification
+        <div className="qualification__sections">
+          <motion.div
+            className="qualification__content"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+          >
+            {/* Education Entry 1 */}
+            <motion.div className="qualification__data" variants={dataVariants}>
+              <div>
+                <h3 className="qualification__title">Bachelor of Technology🎓</h3>
+                <span className="qualification__subtitle">REVA University - Bengaluru</span>
+                <div className="qualification__calender">
+                  <i className="uil uil-calendar-alt"></i> 2020 - 2024
+                </div>
+              </div>
+
+              <div>
+                <motion.span
+                  className="qualification__round"
+                  initial={{ scale: 0 }}
+                  variants={{ visible: { scale: 1 } }}
+                />
+                <motion.span
+                  className="qualification__line"
+                  variants={lineVariants}
+                />
+              </div>
+            </motion.div>
+
+            {/* Education Entry 2 */}
+            <motion.div className="qualification__data" variants={dataVariants}>
+              <div></div>
+
+              <div>
+                <motion.span
+                  className="qualification__round"
+                  initial={{ scale: 0 }}
+                  variants={{ visible: { scale: 1 } }}
+                />
+                <motion.span
+                  className="qualification__line"
+                  variants={lineVariants}
+                />
+              </div>
+              <div>
+                <h3 className="qualification__title">Higher Secondary🧪</h3>
+                <span className="qualification__subtitle">CBSE - Bengaluru</span>
+                <div className="qualification__calender">
+                  <i className="uil uil-calendar-alt"></i> 2018 - 2020
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Qualification;
