@@ -26,10 +26,10 @@ export const projectsData = [
 	{
 		id: 3,
 		image: Work3,
-		title: 'devfinder.',
+		title: 'RepoQuest',
 		category: 'app',
-		demoUrl: 'https://soumyajiitt.github.io/GithubUserSearch/',
-		sourceUrl: 'https://github.com/soumyajiitt/GithubUserSearch',
+		demoUrl: 'https://repoquest.vercel.app/',
+		sourceUrl: 'https://github.com/soumyajiitt/RepoQuest',
 		status: 'completed',
 	},
 	{
