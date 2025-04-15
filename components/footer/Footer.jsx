@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer">
         <div className="footer__container container">
-            <h1 className="footer__title">&lt;Soumyajit Basak/&gt;</h1>
+            <h1 className="footer__title">&lt;Siddhi Agrawal/&gt;</h1>
 
             <ul className="footer__list">
                 <li>
@@ -18,28 +18,27 @@ const Footer = () => {
                 </li>
 
                 <li>
-                    <a href="#testimonials" className="footer__link">Testimonials</a>
+                    <a href="#experience" className="footer__link">Experience</a>
                 </li>
             </ul>
 
             <div className="footer__social">
-                <a href="https://www.instagram.com/soumyajiitttt/" className="footer__social-link" target="_blank">
-                    <i className="bx bxl-instagram"></i>
+                <a href="mailto:a.siddhi0101@gmail.com" className="footer__social-link" target="_blank" rel="noopener noreferrer">
+                    <i className="bx bx-envelope"></i>
                 </a>
 
-                <a href="https://x.com/Soumyajiitt" className="footer__social-link" target="_blank">
-                    <i className="bx bxl-twitter"></i>
-                </a>
-
-                <a href="https://github.com/soumyajiitt" className="footer__social-link" target="_blank">
+                <a href="https://github.com/siddhiiagrawall" className="footer__social-link" target="_blank" rel="noopener noreferrer">
                     <i className="bx bxl-github"></i>
+                </a>
+
+                <a href="https://leetcode.com/u/agrawalriddhisiddhi8/" className="footer__social-link" target="_blank" rel="noopener noreferrer">
+                    <i className="bx bx-code-alt"></i> {/* Alternative icon since LeetCode has no official one */}
                 </a>
             </div>
 
-            <span className="footer__copy">&#169; Soumyajit Basak. All rigths reserved</span>
         </div>
     </footer>
   )
 }
 
-export default Footer
+export default Footer;

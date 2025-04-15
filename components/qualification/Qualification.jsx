@@ -1,10 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { motion } from 'framer-motion'; // Import motion
+import { motion } from 'framer-motion';
 import './qualification.css';
 
 const Qualification = () => {
-  // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -45,13 +44,14 @@ const Qualification = () => {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
           >
-            {/* Education Entry 1 */}
+
+            {/* B.Tech */}
             <motion.div className="qualification__data" variants={dataVariants}>
               <div>
-                <h3 className="qualification__title">Bachelor of Technology🎓</h3>
-                <span className="qualification__subtitle">REVA University - Bengaluru</span>
+                <h3 className="qualification__title">Bachelor of Technology (CSE)</h3>
+                <span className="qualification__subtitle">G.L. Bajaj Institute of Technology and Management, Greater Noida</span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2020 - 2024
+                  <i className="uil uil-calendar-alt"></i> Aug 2021 – Aug 2025
                 </div>
               </div>
 
@@ -68,7 +68,7 @@ const Qualification = () => {
               </div>
             </motion.div>
 
-            {/* Education Entry 2 */}
+            {/* Class 12 */}
             <motion.div className="qualification__data" variants={dataVariants}>
               <div></div>
 
@@ -84,11 +84,30 @@ const Qualification = () => {
                 />
               </div>
               <div>
-                <h3 className="qualification__title">Higher Secondary🧪</h3>
-                <span className="qualification__subtitle">CBSE - Bengaluru</span>
+                <h3 className="qualification__title">Class 12th (PCM)</h3>
+                <span className="qualification__subtitle">Radiant Stars English School, Aligarh</span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2018 - 2020
+                  <i className="uil uil-calendar-alt"></i> June 2021
                 </div>
+              </div>
+            </motion.div>
+
+            {/* Class 10 */}
+            <motion.div className="qualification__data" variants={dataVariants}>
+              <div>
+                <h3 className="qualification__title">Class 10th</h3>
+                <span className="qualification__subtitle">Radiant Stars English School, Aligarh</span>
+                <div className="qualification__calender">
+                  <i className="uil uil-calendar-alt"></i> June 2019
+                </div>
+              </div>
+
+              <div>
+                <motion.span
+                  className="qualification__round"
+                  initial={{ scale: 0 }}
+                  variants={{ visible: { scale: 1 } }}
+                />
               </div>
             </motion.div>
           </motion.div>
