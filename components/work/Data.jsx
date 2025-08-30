@@ -1,41 +1,36 @@
-import Work2 from '../../src/assets/Work1.png';
-import Work3 from '../../src/assets/Work1.png';
-import Work4 from '../../src/assets/Work1.png';
-import Work5 from '../../src/assets/Work1.png';
-import Work6 from '../../src/assets/Work1.png';
-import Work7 from '../../src/assets/Work1.png';
+import Work1 from '../../src/assets/Work1.webp';
 
 export const projectsData = [
   {
     id: 1,
-    image: Work2,
+    image: Work1,
     title: 'AI Document Extractor',
     category: 'web',
-    demoUrl: '#', // Add demo if deployed
+    demoUrl: '#', // Add demo link if hosted
     sourceUrl: 'https://github.com/siddhiiagrawall/Doc_extractor/tree/main',
     status: 'completed',
   },
   {
     id: 2,
-    image: Work3,
-    title: ' Wallet App',
+    image: Work1,
+    title: 'React Native Wallet App',
     category: 'app',
-    demoUrl: '#', 
+    demoUrl: '#',
     sourceUrl: 'https://github.com/siddhiiagrawall/react_native_wallet',
     status: 'completed',
   },
   {
     id: 3,
-    image: Work4,
+    image: Work1,
     title: 'Project Management System',
     category: 'web',
-    demoUrl: '#', 
+    demoUrl: '#',
     sourceUrl: 'https://github.com/siddhiiagrawall/project_management',
     status: 'completed',
   },
   {
     id: 4,
-    image: Work5,
+    image: Work1,
     title: 'Image-to-Text Converter',
     category: 'web',
     demoUrl: '#',
@@ -44,7 +39,7 @@ export const projectsData = [
   },
   {
     id: 5,
-    image: Work6,
+    image: Work1,
     title: 'AI Resume Builder',
     category: 'web',
     demoUrl: '#',
@@ -53,23 +48,26 @@ export const projectsData = [
   },
   {
     id: 6,
-    image: Work7,
+    image: Work1,
     title: 'CPU Scheduling Simulator (C++)',
     category: 'app',
     demoUrl: '#',
     sourceUrl: 'https://github.com/siddhiiagrawall/scheduler',
     status: 'completed',
   },
+  {
+    id: 7,
+    image: Work1,
+    title: 'Any Future Project',
+    category: 'web',
+    demoUrl: '#',
+    sourceUrl: '#',
+    status: 'development',
+  },
 ];
 
 export const projectsNav = [
-  {
-    name: 'all',
-  },
-  {
-    name: 'app',
-  },
-  {
-    name: 'web',
-  },
+  { name: 'all' },
+  { name: 'app' },
+  { name: 'web' },
 ];
