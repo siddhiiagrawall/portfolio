@@ -19,7 +19,7 @@ const Contact = () => {
         <section className="contact section" id="contact">
             <h2 className="section__title">Get In Touch 📩</h2>
             <span className="section__subtitle">
-                Passionate about software engineering, machine learning, and robotics? Let’s connect and collaborate — I’m open to exciting opportunities and innovative ideas.
+                Open to Software Engineer, Backend, and Fullstack opportunities — let’s connect and collaborate.
             </span>
 
             <div className="contact__container container grid">
@@ -33,6 +33,34 @@ const Contact = () => {
                             <span className="contact__card-data">a.siddhi0101@gmail.com</span>
                             <a href="mailto:a.siddhi0101@gmail.com" className="contact__button">
                                 Write Me <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                            </a>
+                        </div>
+
+                        <div className="contact__card">
+                            <i className="bx bxl-linkedin contact__card-icon"></i>
+                            <h3 className="contact__card-title">LinkedIn</h3>
+                            <span className="contact__card-data">linkedin.com/in/siddhi-agrawal-35a760244</span>
+                            <a
+                                href="https://www.linkedin.com/in/siddhi-agrawal-35a760244"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="contact__button"
+                            >
+                                Visit <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                            </a>
+                        </div>
+
+                        <div className="contact__card">
+                            <i className="bx bxl-github contact__card-icon"></i>
+                            <h3 className="contact__card-title">GitHub</h3>
+                            <span className="contact__card-data">github.com/siddhiagrawal01</span>
+                            <a
+                                href="https://github.com/siddhiagrawal01"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="contact__button"
+                            >
+                                Visit <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
                         </div>
 

@@ -57,10 +57,13 @@ const Data = () => {
         {displayText} 👋
       </h1>
 
-      <h3 className="home__subtitle">Aspiring Software Engineer | ML + Robotics Enthusiast</h3>
+      <h3 className="home__subtitle">Backend & Fullstack Developer</h3>
 
       <p className="home__description">
-        I’m a passionate developer blending full-stack web skills with machine learning and robotics. I love solving real-world problems with clean code and creative logic.
+        Currently working as a <strong>Software Engineer Intern at Progress (Sharefile)</strong>, with prior
+        experience at Futuristic Bots. I enjoy building <strong>scalable backends, REST APIs, and fullstack
+        applications</strong> using Python, Django, Node.js, React, and modern tools. Focused on clean code,
+        performance optimization, and rapid learning.
       </p>
 
       <a href="mailto:a.siddhi0101@gmail.com" className="button button--flex">

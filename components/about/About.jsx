@@ -9,7 +9,7 @@ const About = () => {
   return (
     <section className="about section" id="about">
         <h2 className="section__title">About Me</h2>
-        <span className="section__subtitle">My Intoduction</span>
+        <span className="section__subtitle">Introduction</span>
 
         <div className="about__container container grid">
           <img src={AboutImg} alt="" className="about__img" />
@@ -17,7 +17,15 @@ const About = () => {
           <div className="about__data">
             <Info />
 
-            <p className="about__description">Software Developer & Robotics Enthusiast — I build full-stack web apps and smart robotic systems using technologies like React, Django, Python, and C++. From AI-powered resume builders to real-time LiDAR-based detection in robots, I combine software and hardware to create efficient, real-world solutions. Whether it’s a dashboard, a machine learning model, or a robotics control module—I bring it to life.</p>
+            <p className="about__description">
+              I’m a <strong>Software Engineer Intern at Progress (ShareFile)</strong> with prior 
+              experience at Futuristic Bots, passionate about building <strong>backend systems, 
+              APIs, and full-stack applications</strong>. Skilled in Python, Django, Node.js, 
+              React, and modern databases, I love solving real-world problems with scalable 
+              solutions. I bring hands-on experience in <strong>AI integration, dashboard 
+              development, and process automation</strong>, along with a continuous drive to 
+              learn and adapt to new technologies.
+            </p>
 
             <a download="" href={CV} className="button button--flex">Download CV 
               <svg

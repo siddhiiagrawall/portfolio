@@ -1,7 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
+import Programming from './Programming';
 import Frontend from './Frontend';
-import Coursework from './Coursework';
+import Tools from './Tools';
+import DataML from './DataML';
+import CoreConcepts from './CoreConcepts';
 import './skills.css'
 
 const Skills = () => {
@@ -11,8 +14,11 @@ const Skills = () => {
       <span className="section__subtitle">My Technical Level</span>
 
       <div className="skills__container container grid">
+        <Programming />
         <Frontend />
-        <Coursework />
+        <Tools />
+        <DataML />
+        <CoreConcepts />
       </div>
     </section>
   )
