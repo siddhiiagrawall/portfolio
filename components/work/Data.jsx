@@ -1,9 +1,9 @@
-import Work2 from '../../src/assets/Work1.webp';
-import Work3 from '../../src/assets/Work1.webp';
-import Work4 from '../../src/assets/Work1.webp';
-import Work5 from '../../src/assets/Work1.webp';
-import Work6 from '../../src/assets/Work1.webp';
-import Work7 from '../../src/assets/Work1.webp';
+import Work2 from '../../src/assets/Work1.png';
+import Work3 from '../../src/assets/Work1.png';
+import Work4 from '../../src/assets/Work1.png';
+import Work5 from '../../src/assets/Work1.png';
+import Work6 from '../../src/assets/Work1.png';
+import Work7 from '../../src/assets/Work1.png';
 
 export const projectsData = [
   {
@@ -18,7 +18,7 @@ export const projectsData = [
   {
     id: 2,
     image: Work3,
-    title: ' Wallet',
+    title: ' Wallet App',
     category: 'app',
     demoUrl: '#', 
     sourceUrl: 'https://github.com/siddhiiagrawall/react_native_wallet',
