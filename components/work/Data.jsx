@@ -18,7 +18,7 @@ export const projectsData = [
   {
     id: 2,
     image: Work3,
-    title: 'React Native Wallet App',
+    title: ' Wallet',
     category: 'app',
     demoUrl: '#', 
     sourceUrl: 'https://github.com/siddhiiagrawall/react_native_wallet',
