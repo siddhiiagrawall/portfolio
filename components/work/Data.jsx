@@ -1,4 +1,4 @@
-import Work1 from '../../src/assets/Work1.webp';
+import Work1 from '@/assets/Work1.webp';
 
 export const projectsData = [
   {
