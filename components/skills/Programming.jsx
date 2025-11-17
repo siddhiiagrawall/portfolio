@@ -4,7 +4,7 @@ import React from 'react'
 const Programming = () => {
   return (
     <div className="skills__content">
-      <h3 className="skills__title">Programming & Backend</h3>
+      <h3 className="skills__title">Backend & Programming</h3>
 
       <div className="skills__box">
         <div className="skills__group">
@@ -18,18 +18,10 @@ const Programming = () => {
           </div>
 
           <div className="skills__data">
-            <i className='bx bxl-c-plus-plus'></i>
+            <i className='bx bxl-nodejs'></i>
             <div>
-              <h3 className="skills__name">C++</h3>
-              <span className="skills__level">Advanced</span>
-            </div>
-          </div>
-
-          <div className="skills__data">
-            <i className='bx bx-code-alt'></i>
-            <div>
-              <h3 className="skills__name">Django</h3>
-              <span className="skills__level">Intermediate</span>
+              <h3 className="skills__name">FastAPI / Django</h3>
+              <span className="skills__level">Intermediate–Advanced</span>
             </div>
           </div>
 
@@ -44,7 +36,7 @@ const Programming = () => {
           <div className="skills__data">
             <i className='bx bx-server'></i>
             <div>
-              <h3 className="skills__name">REST APIs</h3>
+              <h3 className="skills__name">REST APIs / Microservices</h3>
               <span className="skills__level">Proficient</span>
             </div>
           </div>
@@ -52,15 +44,32 @@ const Programming = () => {
           <div className="skills__data">
             <i className='bx bxs-data'></i>
             <div>
-              <h3 className="skills__name">PostgreSQL</h3>
+              <h3 className="skills__name">PostgreSQL / MongoDB</h3>
               <span className="skills__level">Intermediate</span>
+            </div>
+          </div>
+
+          <div className="skills__data">
+            <i className='bx bx-memory-card'></i>
+            <div>
+              <h3 className="skills__name">Redis (Caching / Queues)</h3>
+              <span className="skills__level">Intermediate</span>
+            </div>
+          </div>
+
+          <div className="skills__data">
+            <i className='bx bx-c-plus-plus'></i>
+            <div>
+              <h3 className="skills__name">C++</h3>
+              <span className="skills__level">Advanced</span>
             </div>
           </div>
 
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Programming
+

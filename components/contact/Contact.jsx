@@ -41,7 +41,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">LinkedIn</h3>
                             <span className="contact__card-data">linkedin.com/in/siddhi-agrawal-35a760244</span>
                             <a
-                                href="https://www.linkedin.com/in/siddhi-agrawal-35a760244"
+                                href="https://linkedin.com/in/siddhi-agrawal-831328237"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="contact__button"

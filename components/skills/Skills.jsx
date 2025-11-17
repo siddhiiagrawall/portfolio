@@ -2,8 +2,8 @@
 import React from 'react';
 import Programming from './Programming';
 import Frontend from './Frontend';
-import Tools from './Tools';
-import DataML from './DataML';
+import Tools from './ToolsAndDexOps';
+import DataML from './DataAIML';
 import CoreConcepts from './CoreConcepts';
 import './skills.css'
 
