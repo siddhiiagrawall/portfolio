@@ -1,4 +1,5 @@
 import Work1 from "@/assets/work1.png";
+import chatapp from "@/assets/chatapp.png";
 
 export const projectsData = [
   {
@@ -6,7 +7,7 @@ export const projectsData = [
     image: Work1,
     title: "Product Importer (500K+ CSV Ingestion Engine)",
     category: "backend",
-    demoUrl: null,
+    demoUrl: "https://product-importer-web-production.up.railway.app",
     sourceUrl: "https://github.com/siddhiiagrawall/product-importer",
     status: "completed",
   },
@@ -21,10 +22,10 @@ export const projectsData = [
   },
   {
     id: 3,
-    image: Work1,
+    image: chatapp,
     title: "Real-Time Chat App (Socket.io + JWT)",
     category: "web",
-    demoUrl: null,
+    demoUrl:  "https://chatapp-mern-e9tv.onrender.com/login",
     sourceUrl: "https://github.com/siddhiiagrawall/chat_app",
     status: "completed",
   },
